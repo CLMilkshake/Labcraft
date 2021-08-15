@@ -1,3 +1,8 @@
+#header {
+    display: flex;
+    flex-direction: row;
+}
+
 .middle h1 /*Title on the header*/ {
     color: lime;
     text-decoration: none;
