@@ -1,2 +1,2 @@
-# https://clmilkshake.github.io/MilkshakeGithub
+# https://clmilkshake.github.io/Milkshake-Github
  tube
