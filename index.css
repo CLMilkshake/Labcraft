@@ -12,9 +12,16 @@
     color: lime;
     text-decoration: none;
     font-family: sans-serif;
+    margin-left: 93px;
+}
+.middle img {
+    margin-left: 93px;
+}
+.logo {
+    margin-left: 200px;
 }
 .left {
-    margin-left: 50px;
+    margin-left: 150px;
 }
 .right {
     margin-right: 50px;
@@ -27,4 +34,28 @@
 }
 .logo{
     margin-left: 10px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #cea135;
+}
+.button {
+    width: 70px;
+    margin-right: 200px;
+}
+.button button {
+    background-color: #cea135;
+    border: none;
+}
+.button a {
+    text-decoration: none;
+    color: royalblue;
+    font-size: 1.25em;
 }
