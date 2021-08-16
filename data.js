@@ -8,7 +8,7 @@ var defaultThreads = [
             {
                 author: "CLMilkshake",
                 date: Date.now(),
-                content: "Welcome to Labcraft Chat. Be careful with sensitive Info. You will appear as Anonymous. Thanks!"
+                content: "Welcome to Labcraft Chat. Be careful with sensitive Info. You will appear as Anonymous. Have fun! Thanks!"
             }
         ]
     },
