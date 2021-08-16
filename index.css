@@ -63,3 +63,15 @@
     color: royalblue;
     font-size: 1.25em;
 }
+#mid-page {
+    background-color: #cea135;
+    margin-top: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.discord {
+    margin-right: -1200px;
+}
