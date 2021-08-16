@@ -10,7 +10,7 @@
 <body>
     <div class="top-bar">
         <h1>
-            Labcraft Forum
+            Labcraft Chat
         </h1>
     </div>
     <div class="main">
@@ -31,16 +31,13 @@
             ${thread.title}
         </h4>
         <div class="bottom">
-            <p class="timestamp">
-                ${new Date(thread.date).toLocaleString()}
-            </p>
             <p class="comment-count">
                 ${thread.comments.length} comments
             </p>
         </div>
     `
     header.insertAdjacentHTML('beforeend', headerHtml)
-
+ 
     function addComment(comment) {
         var commentHtml = `
             <div class="comment">
@@ -59,12 +56,12 @@
         `
         comments.insertAdjacentHTML('beforeend', commentHtml);
     }
-
+ 
     var comments = document.querySelector('.comments');
     for (let comment of thread.comments) {
         addComment(comment);
     }
-
+ 
     var btn = document.querySelector('button');
     btn.addEventListener('click', function() {
         var txt = document.querySelector('textarea');
@@ -76,7 +73,7 @@
         addComment(comment);
         txt.value = '';
         thread.comments.push(comment);
-        localStorage.setItem('threads', JSON.stringify(threads));
+        localStorage.setItem('threads2', JSON.stringify(threads));
     })
 </script>
 </body>

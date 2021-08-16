@@ -48,6 +48,8 @@ button {
 }
 .comments {
     margin: 40px 0px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .comment {
     margin: 10px 0px;

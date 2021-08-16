@@ -11,7 +11,7 @@
 <body>
     <div class="top-bar">
         <h1>
-            Labcraft Forum
+            Labcraft Chat
         </h1>
         <div class="nav">
             <div class="link">
@@ -24,7 +24,7 @@
                 <a href="#">Contact</a>
             </div>
             <div class="link">
-                <a href="forums.html">Forums</a>
+                <a href="forums.html">Chat</a>
             </div>
         </div>
     </div>
@@ -56,6 +56,26 @@
             `
             container.insertAdjacentHTML('beforeend', html);
         }
+    
+ 
+    var threads = document.querySelector('.threads');
+    for (let comment of thread.threads) {
+        addThread(threads);
+    }
+ 
+    var btn = document.querySelector('button');
+    btn.addEventListener('click', function() {
+        var txt = document.querySelector('textarea');
+        var comment = {
+            content: txt.value,
+            date: Date.now(),
+            author: 'Annonomus'
+        }
+        addComment(comment);
+        txt.value = '';
+        thread.threads.push(threadd);
+        localStorage.setItem('threads', JSON.stringify(threads));
+    })
     </script>
 </body>
 </html>
