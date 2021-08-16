@@ -6,7 +6,7 @@
     background-color: royalblue;
     margin: -10px;
     padding-top: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 }
 .middle h1 /*Title on the header*/ {
     color: lime;
@@ -34,6 +34,7 @@
 }
 .logo{
     margin-left: 10px;
+    margin-top: -20px;
 }
 .nav {
     display: flex;
@@ -45,8 +46,9 @@
     margin-left: 20px;
     margin-right: 20px;
 }
-.link p {
-    color: green;
+.link a {
+    color: #cea135;
+    text-decoration: none;
 }
 .button {
     width: 70px;
