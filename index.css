@@ -53,6 +53,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-left: -15px;
 }
 .link {
     margin-left: 20px;
@@ -131,4 +132,24 @@ body {
     margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
+}
+.exp {
+    margin-top: 200px;
+}
+.exp a {
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(116, 227, 241);
+}
+.exp1 {
+    margin-top: 200px;
+}
+.exp1 a {
+    text-decoration: none;
+}
+.things {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
