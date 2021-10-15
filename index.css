@@ -151,5 +151,14 @@ body {
 .things {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
+}
+.exp img {
+    width: 700px;
+}
+.exp h3, p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
