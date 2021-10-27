@@ -142,11 +142,26 @@ body {
     justify-content: space-between;
     color: rgb(116, 227, 241);
 }
-.exp1 {
-    margin-top: 200px;
-}
 .exp1 a {
     text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(116, 227, 241);
+}
+.exp2 a {
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(116, 227, 241);
+}
+.exp1 img{
+    width: 100px;
+    margin-left: 193px;
+    margin-bottom: 10px;
+}
+.exp2 img{
+    width: 100px;
+    margin-left: 210px;
 }
 .things {
     display: flex;
@@ -155,10 +170,20 @@ body {
     flex-direction: column;
 }
 .exp img {
-    width: 700px;
+    width: 100px;
+    margin-left: 71px;
 }
-.exp h3, p {
+.exp p {
     justify-content: center;
     align-items: center;
     display: flex;
+}
+.exp h3 {
+    margin-left: 66px;
+}
+.exp1 h3 {
+    margin-left: 170px;
+}
+.exp2 h3 {
+    margin-left: 205px;
 }
