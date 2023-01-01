@@ -52,6 +52,25 @@
             `
             comments.insertAdjacentHTML('beforeend', commentHtml);
         }
+        
+        function addForum(forum) {
+            var forumHtml = `
+                <div class="forum">
+                    <div class="top-forum">
+                        <p class="user">
+                            ${forum.author}
+                        </p>
+                        <p class="comment-ts">
+                            ${new Date(comment.date).toLocaleString()}
+                        </p>
+                    </div>
+                    <div class="comment-content">
+                        ${comment.content}
+                    </div>
+                </div>
+            `
+            comments.insertAdjacentHTML('beforeend', commentHtml);
+        }
 
         var comments = document.querySelector('.comments');
         for (let comment of thread.comments) {
