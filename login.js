@@ -18,10 +18,7 @@ var objPeople = [
 
 ]
 
-function onStart() 
-{
-	var user = localStorage.getItem("user");
-}
+
 
 function getInfo() {
 	var username = document.getElementById('username').value
@@ -32,7 +29,7 @@ function getInfo() {
 		if(username == objPeople[i].username && password == objPeople[i].password) {
 			console.log(username + " is logged in!!!")
             var user = username;
-			localStorage.setItem("user", username);
+			localStorage.setItem('user', JSON.stringify(user));
             document.getElementById("Username").innerHTML = user;
 			// stop the function if this is found to be true
 			return
