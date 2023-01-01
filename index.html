@@ -117,7 +117,7 @@
 </div>
 <script type="text/javascript">
     function onStart() {
-	    var user = localStorage.getItem('user');
+	    var user = JSON.parse(localStorage.getItem('user'));
         console.log(user)
         document.getElementById("Username").innerHTML = user;
     }
