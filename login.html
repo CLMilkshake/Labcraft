@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--VGhlIEJlc3Qgb2YgYWxsIGlzIHdoZW4geW91ciBmcmllbmRzIGFyZSB0aGVyZSB3aXRoIHlvdSEg aHR0cHM6Ly9kaXNjb3JkLmdnL3VFMno3bk00-->
+    <!--.- .... .-. ----- -.-. .... -- -.... .-.. -.-- ----. -.- .- -..- -. .--- -... ...-- .--- -.- .-.. -- -.. -. .-.. .---- .--. -.. ... -- ....- ...-- -.. .--- .--- ....- . -..- --. -...- or .- .... .-. ----- -.-. .... -- -.... .-.. -.-- ----. --.. .-.. -. .-. .-.. -.-- .-- ----- ...- -.-- ..--- .... .... -.. -.-. ----. -.-. ... .... .- -.-- -.-. .---- --.. -.-- -- .- -...- -...-  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!--The name on the Tab-->
+    <title>Labcraft</title>
+    <!--The Icon on the Tab-->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link
+   rel="stylesheet"
+   href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+   integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+   crossorigin="anonymous"
+    />
+</head>
+<body>
+    <!-- Container element -->
+    <div id="Header">
+        <div class="left">
+            <div class="about">
+				<p>Welcome</p>
+				<p style="margin-top: -15px;"><span id="Username"></span></p>
+        </div>
+        </div>
+        <div class="middle">
+            <!--This is the Image-->
+            <div class="logo">
+            <img src="favicon.png" alt="Homepage Image">
+        </div>
+        <div class="nav">
+            <div class="link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="link">
+                <a href="#">About</a>
+            </div>
+            <div class="link">
+                <a href="#">Contact</a>
+            </div>
+            <div class="link">
+                <a href="stuff.html">Forums</a>
+            </div>
+        </div>
+    </div>
+        <div class="right">
+            <div class="button">
+            <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="login.html"><b>Login</b></a></button>
+        </div>
+        </div>
+</div>
+
+
+<div id="mid-page" style="display: flex; align-items: center; justify-content: center; width: 102%;">
+		<form>
+			<div class="login">
+				<input type="text" id="username" placeholder="Username" style="width: 400px; height: 50px; font-size: 30px;">
+				<input type="password" id="password" placeholder="Password" style="width: 400px; height: 50px; font-size: 30px;">
+			</div>
+			<button type="button" onclick="getInfo()" style="width: 400px; height: 50px; font-size: 30px; margin-left: 200px; margin-top: 20px; background-color: royalblue; color: white;">Login</button>
+		</form>
+</div>
+
+
+<div id="lowerpage">
+	<div class="left-lower">
+		<div class="logo-lower">
+		<img src="favicon.png" alt="Logo">
+	</div>
+	</div>
+	<div class="middle-lower">
+		<div class="nav">
+			<div class="link">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="link">
+				<a href="#">About</a>
+			</div>
+			<div class="link">
+				<a href="#">Contact</a>
+			</div>
+			<div class="link">
+				<a href="">Help</a>
+			</div>
+		</div>
+	</div>
+	<div class="right-lower">
+		<div class="icons">
+			<div class="icon">
+				<a href="" style="color: #cea135;"><i class="fas fa-envelope"></i></a>
+			</div>
+			<div class="icon">
+				<a href="https://www.twitch.tv/sir_toasts_alot" style="color: rebeccapurple;"><i class="fab fa-twitch"></i></a>
+			</div>
+			<div class="icon">
+				<a href="https://www.youtube.com/channel/UCowJstxfsKJwne6_k1l9jGg" style="color: red;"><i class="fab fa-youtube"></i></a>
+			</div>
+
+		</div>
+	</div>
+</div>
+		<script src="login.js"></script>
+	</body>
+</html>
