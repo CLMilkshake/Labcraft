@@ -5,7 +5,7 @@
 var objPeople = [
 	{ // Object @ 0 index
 		username: "CLMilkshake",
-		password: "15"
+		password: "0150"
 	},
 	{ // Object @ 1 index
 		username: "sir1toasts1alot",
@@ -28,7 +28,7 @@ function getInfo() {
 			console.log(username + " is logged in!!!");
             document.getElementById("Username").innerHTML = username;
 			var signedIn = true
-			localStorage.setItem("signedIn", "true");
+			localStorage.setItem("signedIn", signedIn);
 			localStorage.setItem("user", username);
 			// stop the function if this is found to be true
 			window.location = "https://clmilkshake.github.io/Labcraft/index.html"
