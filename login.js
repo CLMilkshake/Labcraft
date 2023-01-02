@@ -50,7 +50,7 @@ function createAccount()
 		if(username == objPeople[i].username && password == objPeople[i].password) {
 			console.log(username + " is logged in!!!")
 			
-            document.getElementById("Username").innerHTML = user;
+            document.getElementById("Username").innerHTML = username;
 			var signedIn = true
 			localStorage.setItem("user", username);
 			// stop the function if this is found to be true
