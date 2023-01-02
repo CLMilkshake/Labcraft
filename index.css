@@ -1,6 +1,7 @@
 body {
     background:url(Tournament3.png) ;
     background-size: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.20)), url(Tournament3.png); background-size: 100%;
     height: 1000px;
     background-attachment: fixed;
     background-position: center;
@@ -38,14 +39,14 @@ body {
 .logo{
     align-items: center;
     height: 110px;
-    margin-right: 87px;
+    margin-right: 65px;
 }
 .nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: -58px;
+    margin-left: -40px;
 }
 .link {
     display: flex;
@@ -99,14 +100,15 @@ body {
     background-size: cover;
 }
 #bottom-page {
+    height: 70%;
+    width: 100%;
+    margin-left: -10px;
     background-color: royalblue;
-    height: 225px;
-    width: 110%;
-    margin-left: -20px;
-    margin-top: 50px;
+    padding: 20px;
 }
 #lowerpage {
     height: 250px;
+    padding-bottom: 30px;
     background-color: black;
     width: 104%;
     margin-left: -10px;

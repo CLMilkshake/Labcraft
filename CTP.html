@@ -41,10 +41,10 @@
                 <a href="#">About</a>
             </div>
             <div class="link">
-                <a href="#">Contact</a>
+                <a href="#">Updates</a>
             </div>
             <div class="link">
-                <a href="forums/forumtest.html">Forums</a>
+                <a href="forums/thread.html">Forums</a>
             </div>
         </div>
     </div>
@@ -54,24 +54,15 @@
             </div>
             <div class="button" id="Account" style="display: none;">
                 <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="account.html"><b>Account</b></a></button>
-            </div>
+                </div>
         </div>
 </div>
 <div id="mid-page">
-    <div class="left">
+    <div class="left" style="width: 33%;">
     </div>
-    <div class="middle">
-        <div class="yourAccount" style="margin-left: 0px;">
-            <h1>Your Account</h1>
-        </div>
-        <div class="accountInfo" style="width: 99%; margin-left: 0px;">
-            <p><span id="UsernameInfo">You don't have an account!</span></p>
-        </div>
+    <div class="middle" style="margin-right: 45px; width: 33%;">
     </div>
-    <div class="right" style="margin-right: -200px; margin-top: -300px;">
-        <div class="button" id="SignOut" style="display: flex;">
-            <button style="width: 170px; height: 30px; margin-left: -100px;" onclick="signOut()"><b>Sign Out</b></button>
-        </div>
+    <div class="right" style="width: 12%;">
         <div class="discord">
         <!--<iframe src="https://discord.com/widget?id=791722131641598032&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>-->
         </div>
@@ -92,10 +83,10 @@
                     <a href="#">About</a>
                 </div>
                 <div class="link">
-                    <a href="#">Contact</a>
+                    <a href="#">Updates</a>
                 </div>
                 <div class="link">
-                    <a href="">Forums</a>
+                    <a href="">Help</a>
                 </div>
             </div>
         </div>
@@ -120,24 +111,19 @@
 	    var user = localStorage.getItem('user');
         console.log(user)
         document.getElementById("Username").innerHTML = user;
-        document.getElementById("UsernameInfo").innerHTML = user;
         var lButton = document.getElementById("Login");
         var aButton = document.getElementById("Account");
-        var signedIn = localStorage.getItem("signedIn");
-        if(signedIn = true)
+        var signedIn = document.getElementById("signedIn");
+        if(user != " ")
         {
-            lButton.style.display = "none"
             aButton.style.display = "flex"
+            lButton.style.display = "none"
         }
-    }
-
-    function signOut()
-    {
-			var signedIn = false
-			localStorage.setItem("signedIn", "false");
-			localStorage.setItem("user", " ");
-            window.location = "https://clmilkshake.github.io/Labcraft/"
-            document.getElementById("Username").innerHTML = localStorage.getItem("user");
+        else
+        {
+            lButton.style.display = "flex"
+            aButton.style.display = "none"
+        }
     }
 </script>
 </body>

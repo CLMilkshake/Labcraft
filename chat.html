@@ -18,7 +18,7 @@
    crossorigin="anonymous"
     />
 </head>
-<body onload="onStart()" >
+<body onload="onStart()">
     <!-- Container element -->
     <div id="Header">
         <div class="left">
@@ -40,7 +40,7 @@
                 <a href="#">About</a>
             </div>
             <div class="link">
-                <a href="#">Contact</a>
+                <a href="#">Updates</a>
             </div>
             <div class="link">
                 <a href="stuff.html">Forums</a>
@@ -53,22 +53,16 @@
         </div>
         </div>
 </div>
-<div class="incorrectPassword">
-	<h2 style="color: red; display: flex; align-items: center; justify-content: center; padding-top: 80px; margin-bottom: -30px; opacity: 0;" id="incorrectPassword">Incorrect Username or Password</h2>
-</div>
+
 <div id="mid-page" style="display: flex; justify-content: center; width: 102%; margin-top: -100px;">
-		<form>
-			<div class="loginTotal" style="display: true;" id="loginTotal">
-				<div class="login">
-					<input type="text" id="username" placeholder="Username" style="width: 400px; height: 50px; font-size: 30px;">
-					<input type="password" id="password" placeholder="Password" style="width: 400px; height: 50px; font-size: 30px;">
-				</div>
-				<button type="button" onclick="getInfo()" style="width: 400px; height: 50px; font-size: 30px; margin-left: 200px; margin-top: 20px; background-color: royalblue; color: white;">Login</button>
-				<div class="createAccount" style="display:flex; align-items: center; justify-content: center; width: 100%; margin-bottom: 30px;"></div>
-					<a href="createAccount.html" style=" color: rgb(255, 255, 255); text-decoration: none; font-size: 30px; margin-left: 290px; font-family: sans-serif;"><b>Create Account</b></a>
-				</div>
-			</div>
-			</form>
+		<h1>Chat</h1>
+        <form>
+            <textarea id="chatArea">Say Hi</textarea>
+            <button style="width: 100px; height: 20px;" onclick="click()"></button>
+        </form>
+        <div class="comments" id=".comments">
+
+        </div>
 </div>
 
 
@@ -115,8 +109,47 @@
         console.log(user)
         document.getElementById("Username").innerHTML = user;
     }
+    var chatArea = document.getElementById("chatArea");
+    var chatButton = document.getElementById("chatButton");
+    var chats = document.getElementById(".comments");
+    var thread = chatArea
 
+    function chatNow()
+    {
+    }
+        function click(){
+            var txt = document.getElementById("chatArea");
+            var chatMessage = {
+                content: txt.value,
+                date: Date.now(),
+                author: localStorage.getItem('user')
+            }
+            console.log(chatMessage)
+            chatNow(chatMessage);
+            localStorage.setItem('chatMessage', JSON.stringify(chatMessage));
+            localStorage.setItem('chats', JSON.stringify(chats));
+            console.log(chatMessage)
+            txt.value = '';
+
+            console.log(chatMessage)
+        var chatHtml = `
+                <div class="comment">
+                    <div class="top-comment">
+                        <p class="user">
+                            ${chatMessage.author}
+                        </p>
+                        <p class="comment-ts">
+                            ${new Date(chatMessage.date).toLocaleString()}
+                        </p>
+                    </div>
+                    <div class="comment-content">
+                        ${chatMessage.content}
+                    </div>
+                </div>
+            `
+            chats.insertAdjacentHTML('beforeend', chatHtml);
+        }
 </script>
-<script src="login.js"></script>
+
 	</body>
 </html>
