@@ -127,14 +127,14 @@
         var lButton = document.getElementById("Login");
         var aButton = document.getElementById("Account");
         var signedIn = document.getElementById("signedIn");
-        if(user = " ")
+        if(user = "Guest")
         {
             aButton.style.display = "none"
             lButton.style.display = "flex"
         }
         if(user = "")
         {
-            localStorage.setItem("user", " ");
+            localStorage.setItem("user", "Guest");
         }
         else
         {
