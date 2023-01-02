@@ -115,6 +115,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+#lowerpage .nav {
+    margin-left: 1px;
+}
 .logo-lower {
     margin-bottom: 10px;
     margin-right: 10px;
