@@ -127,15 +127,15 @@
         var lButton = document.getElementById("Login");
         var aButton = document.getElementById("Account");
         var signedIn = document.getElementById("signedIn");
-        if(user = " ")
-        {
-            lButton.style.display = "flex"
-            aButton.style.display = "none"
-        }
-        else
+        if(user != " ")
         {
             aButton.style.display = "flex"
             lButton.style.display = "none"
+        }
+        else
+        {
+            lButton.style.display = "flex"
+            aButton.style.display = "none"
         }
     }
 </script>
