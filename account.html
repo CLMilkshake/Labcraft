@@ -134,7 +134,7 @@
         document.getElementById("UsernameInfo").innerHTML = user;
         var lButton = document.getElementById("Login");
         var aButton = document.getElementById("Account");
-        var signedIn = document.getElementById("signedIn");
+        var signedIn = localStorage.getItem("signedIn");
         if(signedIn = true)
         {
             lButton.style.display = "none"
