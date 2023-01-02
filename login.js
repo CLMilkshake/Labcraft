@@ -26,7 +26,7 @@ function getInfo() {
 		// check is user input matches username and password of a current index of the objPeople array
 		if(username == objPeople[i].username && password == objPeople[i].password) {
 			console.log(username + " is logged in!!!")
-			
+			var user = " "
             document.getElementById("Username").innerHTML = user;
 			var signedIn = true
 			localStorage.setItem("signedIn", "true");
