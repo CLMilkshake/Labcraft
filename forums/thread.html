@@ -64,7 +64,7 @@
             var comment = {
                 content: txt.value,
                 date: Date.now(),
-                author: 'Aaron'
+                author: localStorage.getItem('user')
             }
             addComment(comment);
             txt.value = '';
