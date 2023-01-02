@@ -124,12 +124,13 @@
 	    var user = localStorage.getItem('user');
         console.log(user)
         document.getElementById("Username").innerHTML = user;
-        document.getElementById("Login") = loginButton;
-        document.getElementById("Account") = accountButton;
+        var lButton = document.getElementById("Login");
+        var aButton = document.getElementById("Account");
+        var signedIn = document.getElementById("signedIn");
         if(signedIn = true)
         {
-            loginButton.style.display = "none"
-            accountButton.style.display = "flex"
+            lButton.style.display = "none"
+            aButton.style.display = "flex"
         }
     }
 </script>

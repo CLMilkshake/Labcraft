@@ -26,10 +26,12 @@ function getInfo() {
 		// check is user input matches username and password of a current index of the objPeople array
 		if(username == objPeople[i].username && password == objPeople[i].password) {
 			console.log(username + " is logged in!!!")
-            var user = username;
+			
             document.getElementById("Username").innerHTML = user;
 			window.location = "https://clmilkshake.github.io/Labcraft/index.html"
 			var signedIn = true
+			localStorage.setItem("signedIn", "true");
+			localStorage.setItem("username", JSON.parse(user));
 			// stop the function if this is found to be true
 			return
 		}
