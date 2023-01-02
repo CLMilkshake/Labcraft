@@ -8,12 +8,12 @@ var objPeople = [
 		password: "15"
 	},
 	{ // Object @ 1 index
-		username: "matt",
-		password: "academy"
+		username: "sir1toasts1alot",
+		password: "2ManyGames"
 	},
 	{ // Object @ 2 index
-		username: "chris",
-		password: "forever"
+		username: "Computer_Error_",
+		password: "Error404"
 	}
 
 ]
