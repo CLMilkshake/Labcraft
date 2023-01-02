@@ -19,6 +19,7 @@
     />
 </head>
 <body onload="onStart()">
+    <script src="login.js"></script>
     <!-- Container element -->
     <div id="Header">
         <div class="left">
@@ -43,14 +44,17 @@
                 <a href="#">Contact</a>
             </div>
             <div class="link">
-                <a href="forums/forumtest.html">Formus</a>
+                <a href="forums/forumtest.html">Forums</a>
             </div>
         </div>
     </div>
         <div class="right">
-            <div class="button">
+            <div class="button" id="Login" style="display: flex;">
             <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="login.html"><b>Login</b></a></button>
-        </div>
+            </div>
+            <div class="button" id="Account" style="display: none;">
+                <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="account.html"><b>Account</b></a></button>
+                </div>
         </div>
 </div>
 <div id="mid-page">
@@ -120,6 +124,13 @@
 	    var user = localStorage.getItem('user');
         console.log(user)
         document.getElementById("Username").innerHTML = user;
+        document.getElementById("Login") = loginButton;
+        document.getElementById("Account") = accountButton;
+        if(signedIn = true)
+        {
+            loginButton.style.display = "none"
+            accountButton.style.display = "flex"
+        }
     }
 </script>
 </body>

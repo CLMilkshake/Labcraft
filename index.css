@@ -111,6 +111,7 @@ body {
     width: 104%;
     margin-left: -10px;
     display: flex;
+    padding-right: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -182,4 +183,10 @@ body {
 }
 .exp2 h3 {
     margin-left: 205px;
+}
+.about {
+    margin-bottom: -20px;
+}
+.about p {
+    margin-top: -15px;
 }

@@ -18,8 +18,6 @@ var objPeople = [
 
 ]
 
-
-
 function getInfo() {
 	var username = document.getElementById('username').value
 	var password = document.getElementById('password').value
@@ -29,11 +27,14 @@ function getInfo() {
 		if(username == objPeople[i].username && password == objPeople[i].password) {
 			console.log(username + " is logged in!!!")
             var user = username;
-			localStorage.setItem('user', JSON.stringify(user));
             document.getElementById("Username").innerHTML = user;
+			window.location = "https://clmilkshake.github.io/Labcraft/index.html"
+			var signedIn = true
 			// stop the function if this is found to be true
 			return
 		}
 	}
 	console.log("incorrect username or password")
+	var element = document.getElementById("incorrectPassword");
+	element.style.opacity = "1";
 }

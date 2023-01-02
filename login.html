@@ -18,7 +18,7 @@
    crossorigin="anonymous"
     />
 </head>
-<body>
+<body onload="onStart()">
     <!-- Container element -->
     <div id="Header">
         <div class="left">
@@ -53,16 +53,19 @@
         </div>
         </div>
 </div>
-
-
+<div class="incorrectPassword">
+	<h2 style="color: red; display: flex; align-items: center; justify-content: center; padding-top: 80px; margin-bottom: -30px; opacity: 0;" id="incorrectPassword">Incorrect Username or Password</h2>
+</div>
 <div id="mid-page" style="display: flex; align-items: center; justify-content: center; width: 102%;">
 		<form>
-			<div class="login">
-				<input type="text" id="username" placeholder="Username" style="width: 400px; height: 50px; font-size: 30px;">
-				<input type="password" id="password" placeholder="Password" style="width: 400px; height: 50px; font-size: 30px;">
+			<div class="loginTotal" style="display: true;" id="loginTotal">
+				<div class="login">
+					<input type="text" id="username" placeholder="Username" style="width: 400px; height: 50px; font-size: 30px;">
+					<input type="password" id="password" placeholder="Password" style="width: 400px; height: 50px; font-size: 30px;">
+				</div>
+				<button type="button" onclick="getInfo()" style="width: 400px; height: 50px; font-size: 30px; margin-left: 200px; margin-top: 20px; background-color: royalblue; color: white;">Login</button>
 			</div>
-			<button type="button" onclick="getInfo()" style="width: 400px; height: 50px; font-size: 30px; margin-left: 200px; margin-top: 20px; background-color: royalblue; color: white;">Login</button>
-		</form>
+			</form>
 </div>
 
 
@@ -103,6 +106,27 @@
 		</div>
 	</div>
 </div>
-		<script src="login.js"></script>
+<script type="text/javascript">
+    function onStart() {
+	    var user = localStorage.getItem('user');
+        console.log(user)
+        document.getElementById("Username").innerHTML = user;
+		isLoggedIn()
+    }
+
+	function isLoggedIn() 
+	{
+		var login = document.getElementById("loginTotal")
+		if(user = null)
+		{
+			document.getElementById("loginTotal")
+		}
+		else
+		{
+			document.getElementById("loginTotal")
+		}
+	}
+</script>
+<script src="login.js"></script>
 	</body>
 </html>
