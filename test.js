@@ -1,8 +1,8 @@
-const fs = require('fs')
-let fInput = "You are reading the content from Tutorials Point"
-fs.writeFile('tp.txt', fInput, (err) => {
-   if (err) throw err;
-   else{
-      console.log("The file is updated with the given data")
-   }
-})
+let file = document.getElementById("readfile");
+file.addEventListener("change", function () {
+var reader = new FileReader();
+  reader.onload = function (progressEvent) {
+console.log(this.result);
+  };
+  reader.readAsText(this.files[0]);
+});
