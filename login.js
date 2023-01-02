@@ -31,7 +31,7 @@ function getInfo() {
 			window.location = "https://clmilkshake.github.io/Labcraft/index.html"
 			var signedIn = true
 			localStorage.setItem("signedIn", "true");
-			localStorage.setItem("username", JSON.parse(user));
+			localStorage.setItem("user", JSON.parse(user));
 			// stop the function if this is found to be true
 			return
 		}
